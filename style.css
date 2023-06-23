@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.display-container{
+    height: 80px;
+    width: 140px;
+    background-color: #dbdbdb;
+    border-radius: 4px;
+}
+
+button{
+    height: 32px;
+    width: 32px;
+}
+
+.main-button{
+    height: 32px;
+    width: 68px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
