@@ -1,50 +1,220 @@
-body{
+
+@font-face {
+    font-family: 'sevenSeg';
+    src: url('seven-seg.ttf');
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #464646;
+
+
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 32px;
 
     width: fit-content;
     height: fit-content;
 
+    border-radius: 24px;
+    background: #363636;
+    box-shadow: 5px 5px 12px #2d2d2d,
+        -5px -5px 12px #3f3f3f;
+
+    padding: 32px;
 }
 
-.display-container{
-    height: 80px;
-    width: 140px;
-    background-color: #dbdbdb;
-    border-radius: 4px;
+.display-container {
+    width: 372px;
+    border-radius: 24px;
+    background: #454545;
+    box-shadow: inset 5px 5px 12px #3a3a3a,
+        inset -5px -5px 12px #505050;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
 }
 
-button{
-    height: 32px;
-    width: 32px;
+
+::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #6d6d6d; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7c7c7c; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b1b1b1;
+  }
+
+
+.expression-container {
+    flex-basis: 41px;
+    overflow-x:auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
-.main-button{
-    height: 32px;
-    width: 68px;
+.result-container {
+    flex-basis: 63px;
+    overflow: hidden;
 }
 
-.button-container{
+.expression{
+    padding-bottom: 4px;
+}
+
+
+
+.expression,
+.result {
+    max-width: 372px;
+    white-space: nowrap;
+    
+    text-align: right;
+    unicode-bidi: bidi-override;
+
+    
+    font-family: 'sevenSeg';
+    margin: 0;
+    font-size: 36px;
+    color: #b1b1b1;
+}
+
+.result {
+    font-size: 72px;
+}
+
+button {
+    height: 84px;
+    width: 84px;
+
+    outline: none;
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 24px;
+    background: linear-gradient(145deg, #313131, #3a3a3a);
+    box-shadow: 9px 9px 17px #2f2f2f,
+        -9px -9px 17px #3d3d3d;
+
+    font-family: 'sevenSeg';
+    font-size: 36px;
+    color: #8a8888;
+}
+
+button:hover {
+    color: #e2e2e2;
+    text-shadow:
+        0px 0px 12px #c9c9c9,
+        0px 0px 24px #c9c9c9,
+        0px 0px 36px #c9c9c9;
+}
+
+button:active {
+    background: #363636;
+    box-shadow: inset 6px 6px 12px #2b2b2b,
+        inset -6px -6px 12px #414141;
+}
+
+
+
+svg {
+    margin-top: 8px;
+    fill: #c05656;
+}
+
+svg:hover {
+    fill: #ff5a5a;
+    filter: drop-shadow(0px 0px 18px #d36262);
+}
+
+.ac {
+    color: #c05656;
+}
+
+.ac:hover {
+    color: #ff5a5a;
+    text-shadow:
+        0px 0px 12px #e97272,
+        0px 0px 24px #e97272,
+        0px 0px 36px #e97272;
+}
+
+.operator {
+    font-size: 48px;
+    color: #4a7599;
+}
+
+.operator:hover {
+    color: #86c8ff;
+    text-shadow:
+        0px 0px 16px #5fb7ff,
+        0px 0px 32px #5fb7ff,
+        0px 0px 48px #5fb7ff;
+}
+
+.small {
+    font-size: 36px;
+    color: #4a7599;
+}
+
+.equal {
+    font-size: 54px;
+    color: #4a996e;
+}
+
+.equal:hover {
+    color: #8affbf;
+    text-shadow:
+        0px 0px 16px #4eff9e,
+        0px 0px 32px #4eff9e,
+        0px 0px 48px #4eff9e;
+}
+
+.main-button {
+    height: 84px;
+    width: 200px;
+}
+
+.button-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 32px;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 32px;
 }

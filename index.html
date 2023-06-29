@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <div class="display-container"></div>
+        <div class="display-container">
+            <div class="expression-container">
+                <div class="expression" lang="en">Hello World!</div>
+            </div>
+            <div class="result-container">
+                <p class="result">get started!</p>
+            </div>
+        </div>
         <div class="button-container">
             <div class="row">
-                <button class="main-button">clear</button>
-                <button>
-                    <img id="delete-key" src="./Vector.svg">
+                <button class="main-button ac">AC</button>
+                <button >
+                    <!-- <img id="delete-key" src="./Vector.svg" width="28px" style="margin-top: 20px;"> -->
+                    <svg width="29.1" height="20" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.4752 0.702026H10.1638C9.74857 0.701937 9.33744 0.790679 8.95386 0.963182C8.57028 1.13568 8.22179 1.38856 7.92829 1.70736L0.488437 9.78331C-0.128958 10.4535 -0.128958 11.5398 0.488437 12.2095L7.92829 20.286C8.52099 20.9294 9.32509 21.2914 10.1633 21.2914H28.4752C30.2212 21.2914 31.6363 19.7552 31.6363 17.8598V4.13358C31.6363 2.23818 30.2212 0.702026 28.4752 0.702026ZM24.2922 14.3242C24.6009 14.6593 24.6009 15.2025 24.2922 15.5376L23.175 16.7504C22.8663 17.0856 22.366 17.0856 22.0573 16.7504L18.992 13.4229L15.9268 16.7504C15.6181 17.0856 15.1177 17.0856 14.809 16.7504L13.6918 15.5376C13.3831 15.2025 13.3831 14.6593 13.6918 14.3242L16.757 10.9967L13.6918 7.66916C13.3831 7.33404 13.3831 6.79089 13.6918 6.45578L14.809 5.24294C15.1177 4.90783 15.6181 4.90783 15.9268 5.24294L18.992 8.57047L22.0573 5.24294C22.366 4.90783 22.8663 4.90783 23.175 5.24294L24.2922 6.45578C24.6009 6.79089 24.6009 7.33404 24.2922 7.66916L21.227 10.9967L24.2922 14.3242Z"/>
+                    </svg>
                 </button>
-                <button>/</button>
+                <button class="operator small">/</button>
             </div>
             <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>X</button>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="operator small">x</button>
             </div>
             <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="operator">-</button>
             </div>
             <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="operator">+</button>
             </div>
             <div class="row">
-                <button>0</button>
-                <button>.</button>
-                <button class="main-button">=</button>
+                <button class="dot">.</button>
+                <button class="num">0</button>
+                <button class="main-button equal">=</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
