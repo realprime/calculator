@@ -152,4 +152,7 @@ equalBtn.addEventListener('click', () => {
     }
 })
 
-//sync with equal to and operator button eval is pending
+//sync with equal to and operator button eval is pending;*****
+//pinning to scroll to the end of the expression display;****
+//keybinding***
+//adding backspace functionality*****
